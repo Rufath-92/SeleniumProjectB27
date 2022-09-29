@@ -1,4 +1,4 @@
-package com.cydeo.tests.day1_selenium_intro;
+package com.cydeo.tests.day1_selenium_intro.shortvideo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -11,19 +11,22 @@ public class PO01_BasicNavigation {
         WebDriver driver = new ChromeDriver();
 
         // navigate.to(url)
-        driver.navigate().to("https://www.google.com");
+        //driver.navigate().to("https://www.google.com");
 
         //driver.get(url)
-        // driver.get("https://www.google.com");
+        driver.get("https://www.google.com");
 
         // navigate.back()
-        driver.navigate().back();
+         driver.navigate().back();
 
         // navigate.forward()
-        driver.navigate().forward();
+       // driver.navigate().forward();
 
 
         // navigate.refresh()
-        driver.navigate().refresh();
+        //driver.navigate().refresh();
+
+
+
     }
 }
