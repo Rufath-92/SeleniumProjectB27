@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression suite">
+<!--    <test name="Selenium test">-->
+<!--        <classes>-->
+<!--            <class name="com.cydeo.ShortVideo.Selenium.P18_HTML_Dropdown"></class>-->
+<!--            <class name="com.cydeo.ShortVideo.Selenium.P17_LocatingDropdownList_Multiple"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name = "TestNG intro">-->
+<!--        <classes>-->
+
+<!--            <class name="com.cydeo.ShortVideo.TestNG.P01_TestNG_Intro">-->
+<!--                <methods>-->
+<!--                    <include name="" />-->
+<!--                    <exclude name="" />-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="com.cydeo.HomeWork.vytrackAutoTest">-->
+<!--                <methods>-->
+<!--                    <include name="automationTestForDriver" />-->
+<!--                    <exclude name="automationTestForStoreManager" />-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="test package">-->
+<!--        <packages>-->
+<!--            <package name="com.cydeo.tests.day6_alerts_iframe_windows"></package>-->
+<!--        </packages>-->
+<!--    </test>-->
+<!--    -->
+    
+    <test name="vytrack.com">
+        <classes>
+            <class name="com.cydeo.HomeWork.vytrackAutoTest"></class>
+            
+        </classes>
+    </test>
+</suite>
