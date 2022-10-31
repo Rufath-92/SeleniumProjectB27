@@ -44,16 +44,12 @@ public class BrowserUtils {
         Assert.assertTrue(actualTitle.contains(expectedTitle),"Title verification failed");
     }
 
-
-
-
     /**
      * This method is used to pause the code for given seconds
      * It is static method we can call with class name
      * BrowsersUtils.sleep(3)
      * @param seconds
      */
-
 
     public static void sleep(int seconds){
 
@@ -81,9 +77,17 @@ public class BrowserUtils {
         Assert.assertEquals(driver.getTitle(),expectedTitle);
     }
 
-    public static void waitForInvisibilityOf(WebElement element){
+    public static void waitForInvisibilityOf(WebElement element,int seconds){
 
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
+
+    public static void waitForVisibilityOf(WebElement element,int seconds){
+
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(seconds));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+
 }

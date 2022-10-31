@@ -91,17 +91,9 @@ public class LibraryLoginTest {
 //        2- Go to: https://library1.cydeo.com
 
 //        3- Enter incorrect username or incorrect password
-
-
         libraryLoginPage.email.sendKeys(ConfigReader.getProperty("library1.student.email"));
         libraryLoginPage.password.sendKeys(ConfigReader.getProperty("library1.student.password"));
         libraryLoginPage.signInBtn.click();
-
-
-//        4- Verify title expected error is displayed:
-//        Expected: Sorry, Wrong Email or Password
-
-        Assert.assertTrue(libraryLoginPage.wrongEmailAndPasswordErrorMsg.isDisplayed());
     }
 
     @AfterMethod

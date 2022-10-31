@@ -19,7 +19,7 @@ public class Driver {
 
     /*
     Making our 'driver' instance private, so that it is not reachable from outside of any class
-    We make it static, because we want it to run before anyting else,
+    We make it static, because we want it to run before anything else,
     also we will use it in static method
      */
     private static WebDriver driver;
@@ -42,7 +42,7 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                  //  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();

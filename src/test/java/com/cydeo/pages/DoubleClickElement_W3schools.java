@@ -5,14 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DynamicallyLoadedPage_7 {
+public class DoubleClickElement_W3schools {
 
-    public DynamicallyLoadedPage_7() {
+
+    public DoubleClickElement_W3schools() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//strong[.='Done!']")
-    public WebElement doneMsg;
 
-    @FindBy(xpath = "//img[@class='rounded mx-auto d-block']")
-    public WebElement image;
+    @FindBy(id = "iframeResult")
+    public static WebElement iframe;
+
+    @FindBy(id = "demo")
+    public WebElement doubleClickText;
 }

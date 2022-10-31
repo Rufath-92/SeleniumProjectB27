@@ -17,8 +17,7 @@ public class LibraryLoginTest {
 //        loginPage.password.sendKeys(ConfigReader.getProperty("library3.student.password"));
 //        loginPage.signInBtn.click();
 
-        loginPage.login("library3.student.email","library3.student.password");
-
+        loginPage.login("librarian1@library","qU9mrvur");
 
     }
 
